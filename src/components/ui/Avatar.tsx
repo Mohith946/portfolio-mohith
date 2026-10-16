@@ -13,7 +13,7 @@ export function Avatar({ show, size = 28 }: { show: boolean; size?: number }) {
         style={{ width: size, height: size }}
         className={cn(
           classes,
-          "grid place-items-center bg-accent-soft font-serif text-accent italic",
+          "grid place-items-center bg-accent-soft font-serif text-accent font-semibold",
         )}
       >
         {profile.shortName[0]}

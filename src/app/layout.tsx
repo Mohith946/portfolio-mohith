@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Instrument_Serif, Inter, JetBrains_Mono } from "next/font/google";
+import { Bodoni_Moda, Inter, JetBrains_Mono } from "next/font/google";
 import { Footer } from "@/components/sections/Footer";
 import { Navbar } from "@/components/sections/Navbar";
 import { Providers } from "@/components/providers/Providers";
@@ -11,11 +11,10 @@ import { publicFileExists } from "@/lib/publicFile";
 import { getSiteUrl } from "@/lib/site";
 import "./globals.css";
 
-const serif = Instrument_Serif({
+const bodoni = Bodoni_Moda({
   subsets: ["latin"],
-  weight: "400",
   style: ["normal", "italic"],
-  variable: "--font-instrument-serif",
+  variable: "--font-bodoni-moda",
 });
 
 const sans = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -40,8 +39,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#0d0f0e" },
-    { media: "(prefers-color-scheme: light)", color: "#f6f5f1" },
+    { media: "(prefers-color-scheme: dark)", color: "#090a10" },
+    { media: "(prefers-color-scheme: light)", color: "#f8fafc" },
   ],
 };
 
@@ -56,7 +55,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${serif.variable} ${sans.variable} ${mono.variable}`}
+      className={`${bodoni.variable} ${sans.variable} ${mono.variable}`}
     >
       <body className="relative min-h-screen overflow-x-hidden">
         <a

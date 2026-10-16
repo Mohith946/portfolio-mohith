@@ -17,11 +17,11 @@ export default function OpengraphImage() {
         flexDirection: "column",
         justifyContent: "space-between",
         padding: 72,
-        background: "#0d0f0e",
+        background: "#090a10",
         backgroundImage:
-          "radial-gradient(circle at 0% 0%, rgba(52,211,153,0.28), transparent 45%), linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)",
+          "radial-gradient(circle at 0% 0%, rgba(129,140,248,0.28), transparent 45%), linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)",
         backgroundSize: "100% 100%, 48px 48px, 48px 48px",
-        color: "#ecefed",
+        color: "#eef2f6",
       }}
     >
       <div
@@ -32,10 +32,10 @@ export default function OpengraphImage() {
           fontSize: 20,
           letterSpacing: 4,
           textTransform: "uppercase",
-          color: "#8f9792",
+          color: "#8691a6",
         }}
       >
-        <div style={{ width: 12, height: 12, borderRadius: 12, background: "#34d399" }} />
+        <div style={{ width: 12, height: 12, borderRadius: 12, background: "#818cf8" }} />
         {hero.status}
       </div>
       <div
@@ -48,12 +48,12 @@ export default function OpengraphImage() {
         }}
       >
         <span>{headline.before}&nbsp;</span>
-        <span style={{ color: "#34d399", fontStyle: "italic" }}>{headline.accent}</span>
+        <span style={{ color: "#818cf8", fontStyle: "italic" }}>{headline.accent}</span>
         <span>&nbsp;{headline.after}</span>
       </div>
       <div style={{ display: "flex", justifyContent: "space-between", fontSize: 30 }}>
         <span>{profile.name}</span>
-        <span style={{ color: "#8f9792" }}>{profile.role}</span>
+        <span style={{ color: "#8691a6" }}>{profile.role}</span>
       </div>
     </div>,
     size,

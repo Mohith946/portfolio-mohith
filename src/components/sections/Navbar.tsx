@@ -48,7 +48,7 @@ export function Navbar({ hasAvatar }: { hasAvatar: boolean }) {
             className="flex items-center gap-2 rounded-full py-1 pr-3 pl-1"
           >
             <Avatar show={hasAvatar} size={30} />
-            <span className="font-serif text-lg italic">{profile.shortName}</span>
+            <span className="font-serif text-lg font-medium tracking-tight">{profile.shortName}</span>
           </a>
 
           <ul className="hidden items-center md:flex">

@@ -14,11 +14,11 @@ export default function Icon() {
         alignItems: "center",
         justifyContent: "center",
         borderRadius: 16,
-        background: "#0d0f0e",
-        border: "3px solid #34d399",
-        color: "#34d399",
+        background: "#090a10",
+        border: "3px solid #818cf8",
+        color: "#818cf8",
         fontSize: 38,
-        fontStyle: "italic",
+        fontWeight: 700,
       }}
     >
       {profile.shortName[0]}

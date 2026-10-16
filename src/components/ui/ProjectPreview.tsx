@@ -39,7 +39,7 @@ export function ProjectPreview({
     return (
       <div
         className={cn(
-          "relative flex aspect-[16/10] flex-col overflow-hidden rounded-xl border border-border-strong/70 bg-[#090b0a] p-4 text-xs select-none sm:p-5",
+          "relative flex aspect-[16/10] flex-col overflow-hidden rounded-xl border border-border-strong/70 bg-[#090b14] p-4 text-xs select-none sm:p-5",
           className,
         )}
       >
@@ -108,7 +108,7 @@ export function ProjectPreview({
     return (
       <div
         className={cn(
-          "relative flex aspect-[16/10] flex-col justify-between overflow-hidden rounded-xl border border-border-strong/70 bg-[#070908] p-4 font-mono text-xs select-none sm:p-5",
+          "relative flex aspect-[16/10] flex-col justify-between overflow-hidden rounded-xl border border-border-strong/70 bg-[#070810] p-4 font-mono text-xs select-none sm:p-5",
           className,
         )}
       >
@@ -128,9 +128,9 @@ export function ProjectPreview({
         </div>
 
         {/* Viewport Simulation with Bounding Boxes */}
-        <div className="relative my-2 flex-1 rounded-lg border border-dashed border-white/15 bg-[radial-gradient(ellipse_at_center,rgba(52,211,153,0.06),transparent_70%)] p-3">
+        <div className="relative my-2 flex-1 rounded-lg border border-dashed border-white/15 bg-[radial-gradient(ellipse_at_center,rgba(129,140,248,0.08),transparent_70%)] p-3">
           {/* Target 1 Box */}
-          <div className="absolute top-4 left-6 rounded border border-accent bg-accent/10 px-2 py-1 text-[10px] text-accent shadow-[0_0_12px_rgba(52,211,153,0.3)]">
+          <div className="absolute top-4 left-6 rounded border border-accent bg-accent/10 px-2 py-1 text-[10px] text-accent shadow-[0_0_12px_rgba(129,140,248,0.35)]">
             <div className="flex items-center gap-1 font-bold">
               <Eye size={10} /> Person · 98.4%
             </div>
@@ -163,7 +163,7 @@ export function ProjectPreview({
     return (
       <div
         className={cn(
-          "relative flex aspect-[16/10] flex-col justify-between overflow-hidden rounded-xl border border-border-strong/70 bg-[#0a0d0c] p-4 font-mono text-xs select-none sm:p-5",
+          "relative flex aspect-[16/10] flex-col justify-between overflow-hidden rounded-xl border border-border-strong/70 bg-[#0a0d18] p-4 font-mono text-xs select-none sm:p-5",
           className,
         )}
       >

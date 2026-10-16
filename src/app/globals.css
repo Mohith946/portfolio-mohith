@@ -5,34 +5,34 @@
 /* ── Design tokens ─────────────────────────────────────────── */
 :root,
 .dark {
-  --bg: #0d0f0e;
-  --surface: #121513;
-  --surface-2: #171b19;
-  --fg: #ecefed;
-  --muted: #8f9792;
+  --bg: #090a10;
+  --surface: #10131d;
+  --surface-2: #161a27;
+  --fg: #eef2f6;
+  --muted: #8691a6;
   --border: rgb(255 255 255 / 0.08);
   --border-strong: rgb(255 255 255 / 0.16);
-  --accent: #34d399;
-  --accent-fg: #04140d;
-  --accent-soft: rgb(52 211 153 / 0.12);
+  --accent: #818cf8;
+  --accent-fg: #060814;
+  --accent-soft: rgb(129 140 248 / 0.12);
   --grid: rgb(255 255 255 / 0.035);
-  --glow: rgb(52 211 153 / 0.16);
+  --glow: rgb(129 140 248 / 0.16);
   color-scheme: dark;
 }
 
 .light {
-  --bg: #f6f5f1;
+  --bg: #f8fafc;
   --surface: #ffffff;
-  --surface-2: #efede7;
-  --fg: #141816;
-  --muted: #5b635e;
-  --border: rgb(0 0 0 / 0.09);
-  --border-strong: rgb(0 0 0 / 0.18);
-  --accent: #047857;
+  --surface-2: #f1f5f9;
+  --fg: #0f172a;
+  --muted: #64748b;
+  --border: rgb(0 0 0 / 0.08);
+  --border-strong: rgb(0 0 0 / 0.16);
+  --accent: #6366f1;
   --accent-fg: #ffffff;
-  --accent-soft: rgb(4 120 87 / 0.1);
+  --accent-soft: rgb(99 102 241 / 0.12);
   --grid: rgb(0 0 0 / 0.04);
-  --glow: rgb(16 185 129 / 0.14);
+  --glow: rgb(99 102 241 / 0.14);
   color-scheme: light;
 }
 
@@ -48,7 +48,8 @@
   --color-accent-fg: var(--accent-fg);
   --color-accent-soft: var(--accent-soft);
   --font-sans: var(--font-inter);
-  --font-serif: var(--font-instrument-serif);
+  --font-serif: var(--font-bodoni-moda);
+  --font-display: var(--font-bodoni-moda);
   --font-mono: var(--font-jetbrains-mono);
 }
 
