@@ -66,7 +66,7 @@ export function Projects() {
   const ordered = [...projects].sort((a, b) => Number(!!b.featured) - Number(!!a.featured));
 
   return (
-    <Section id="projects" index="03" label="Projects">
+    <Section id="projects" index="04" label="Projects">
       <div className="grid gap-5 lg:grid-cols-2">
         {ordered.map((project, i) => (
           <Reveal

@@ -57,8 +57,9 @@ export const profile = {
   name: "Mohith L A",
   shortName: "Mohith",
   role: "Full-Stack Developer",
-  avatar: "/profile.jpg", // TODO: add your photo at public/profile.jpg
-  resume: "/resume.pdf", // TODO: add your résumé at public/resume.pdf
+  avatar: "/profile.jpg",
+  resume: "/resume.pdf",
+  phone: "+91 8792024946",
   location: "Based in Karnataka, India",
   email: "mohithla24@gmail.com",
   linkedin: "https://www.linkedin.com/in/mohith-l-a-041290293",
@@ -83,6 +84,7 @@ export const seo = {
 export const navLinks = [
   { id: "about", label: "About" },
   { id: "experience", label: "Experience" },
+  { id: "education", label: "Education" },
   { id: "projects", label: "Projects" },
   { id: "skills", label: "Skills" },
   { id: "contact", label: "Contact" },
@@ -105,15 +107,17 @@ export const hero = {
     { label: "Projects", value: "3", subtitle: "AI + full-stack" },
     { label: "CGPA", value: "8.17", subtitle: "NMAMIT, CSE" },
   ],
-  workingWith: ["React", "Next.js", "Python", "FastAPI", "MongoDB", "YOLOv8"],
+  workingWith: ["React", "Next.js", "C++", "Agentic AI", "FastAPI", "MongoDB", "YOLOv8"],
   marquee: [
     "React",
     "Next.js",
-    "Node.js",
-    "Python",
-    "FastAPI",
+    "C++",
+    "Agentic AI",
     "LangGraph",
     "OR-Tools",
+    "FastAPI",
+    "Python",
+    "Node.js",
     "YOLOv8",
     "OpenCV",
     "WebSockets",
@@ -242,18 +246,18 @@ export const projects: Project[] = [
 ];
 
 export const skills: SkillGroup[] = [
-  { title: "Languages", items: ["Java", "Python", "C", "C++", "JavaScript", "TypeScript"] },
+  { title: "Languages", items: ["C++", "Java", "C", "JavaScript", "TypeScript"] },
   { title: "Frontend", items: ["React.js", "Next.js", "HTML5", "CSS3", "Tailwind CSS"] },
   {
     title: "Backend",
-    items: ["Node.js", "Express.js", "Spring Boot", "REST APIs", "Hibernate", "Spring Data JPA"],
+    items: ["Node.js", "Express.js", "REST APIs", "Spring Data JPA"],
   },
   { title: "Databases", items: ["MySQL", "MongoDB", "Oracle", "PostgreSQL"] },
   {
     title: "AI / ML",
     items: ["YOLOv8", "OpenCV", "LangGraph", "Google OR-Tools", "Machine Learning"],
   },
-  { title: "Tools", items: ["Git", "GitHub", "Maven", "Postman", "VS Code", "STS"] },
+  { title: "Tools", items: ["Git", "GitHub", "Maven", "Postman", "VS Code"] },
   {
     title: "Concepts",
     items: ["DSA", "OOP", "DBMS", "Operating Systems", "Computer Networks", "Software Engineering"],

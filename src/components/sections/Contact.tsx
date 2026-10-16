@@ -14,7 +14,7 @@ export function Contact() {
   const { heading } = contact;
 
   return (
-    <Section id="contact" index="05" label="Contact">
+    <Section id="contact" index="06" label="Contact">
       <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
         <Reveal>
           <p className="font-serif text-5xl leading-[1.02] tracking-tight text-balance md:text-7xl">
