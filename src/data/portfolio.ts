@@ -71,7 +71,7 @@ export const profile = {
    */
   githubFallback: { repos: 12, followers: 4 },
   /** Your production URL, used for SEO. Can also be set with NEXT_PUBLIC_SITE_URL. */
-  siteUrl: "https://TODO-your-domain.com",
+  siteUrl: "https://portfolio-mohith-eight.vercel.app",
   copyrightYear: 2026,
 };
 
@@ -104,7 +104,7 @@ export const hero = {
     subtitle: "LangGraph · OR-Tools · FastAPI",
   },
   stats: [
-    { label: "Projects", value: "3", subtitle: "AI + full-stack" },
+    { label: "Projects", value: "5", subtitle: "Full-Stack + AI + Web" },
     { label: "CGPA", value: "8.17", subtitle: "NMAMIT, CSE" },
   ],
   workingWith: ["React", "Next.js", "C++", "Agentic AI", "FastAPI", "MongoDB", "YOLOv8"],
@@ -181,7 +181,7 @@ export const projects: Project[] = [
       "Built an AI timetable engine using Google OR-Tools CP-SAT (12+ hard constraints, weighted soft objectives) with a natural-language assistant that turns single-sentence requests into validated, multi-step timetable updates.",
       "Designed a human-in-the-loop leave & substitution workflow in LangGraph, where a multi-agent supervisor builds clash-free period-exchange plans and pauses for HOD approval before notifying affected teachers.",
     ],
-    links: { demo: "TODO_DEMO_URL", github: "TODO_GITHUB_REPO_URL" },
+    links: { demo: "TODO_DEMO_URL", github: "https://github.com/Mohith946/campus_agent" },
     caseStudy: {
       overview:
         "A campus operations platform that combines constraint-based timetable generation with a multi-agent workflow for handling teacher leave and substitutions.",
@@ -211,7 +211,7 @@ export const projects: Project[] = [
       "Real-time AI surveillance dashboard for live object detection and monitoring using YOLOv8 and OpenCV with optimized video streaming.",
       "WebSocket-based real-time analytics dashboard for low-latency monitoring.",
     ],
-    links: { demo: "TODO_DEMO_URL", github: "TODO_GITHUB_REPO_URL" },
+    links: { demo: "TODO_DEMO_URL", github: "https://github.com/Mohith946/Crowd-Management-v8model" },
     caseStudy: {
       overview:
         "A live monitoring dashboard that runs YOLOv8 object detection over video streams and pushes analytics to the browser over WebSockets.",
@@ -232,7 +232,7 @@ export const projects: Project[] = [
       "MERN platform with JWT authentication, role-based access, and incident reporting.",
       "Automated suspect-matching engine using geospatial proximity, crime categories, and physical attributes, plus QR-code-based property verification for faster asset recovery.",
     ],
-    links: { demo: "TODO_DEMO_URL", github: "TODO_GITHUB_REPO_URL" },
+    links: { demo: "https://dvgpolice.vercel.app", github: "https://github.com/Mohith946/Police-Theft-Management-System" },
     caseStudy: {
       overview:
         "A MERN platform for reporting theft incidents, matching suspects, and verifying recovered property.",
@@ -240,6 +240,56 @@ export const projects: Project[] = [
       approach: caseStudyTodo,
       challenges: caseStudyTodo,
       learnings: caseStudyTodo,
+    },
+  },
+  {
+    slug: "liquid-glass-portfolio",
+    title: "Liquid Glass Portfolio (v1)",
+    subtitle: "Glassmorphism Personal Portfolio",
+    summary:
+      "Interactive liquid glass portfolio featuring frosted glassmorphism UI, fluid lighting effects, and responsive layout.",
+    stack: ["React 19", "Vite", "Tailwind CSS", "JavaScript"],
+    highlights: [
+      "Engineered a dark-mode glassmorphic interface with backdrop-filter blurs, subtle gradient borders, and glowing interactive cards.",
+      "Built with React 19 and Vite for instant hot-module replacement and high-speed production builds, deployed on Vercel.",
+    ],
+    links: { demo: "https://mohithla.vercel.app/", github: "https://github.com/Mohith946/Portfolio" },
+    caseStudy: {
+      overview:
+        "An exploration into modern liquid glassmorphism design and fluid web UI, serving as Mohith's original portfolio foundation.",
+      problem:
+        "Traditional developer portfolios often look generic or template-heavy. The goal was to create an interactive, visually engaging portfolio that demonstrates modern frontend design instincts and fluid glass styling.",
+      approach:
+        "Built a lightweight SPA using React 19 and Vite, pairing Tailwind CSS for rapid glass card styling with custom CSS gradient meshes and fluid lighting.",
+      challenges:
+        "Balancing backdrop-blur performance and contrast accessibility across varying screen sizes while maintaining high frame rates.",
+      learnings:
+        "Gained deep understanding of CSS backdrop filters, responsive layout composition, and Vercel edge deployment workflows.",
+    },
+  },
+  {
+    slug: "modernist-developer-portfolio",
+    title: "Modernist Developer Portfolio (v2)",
+    subtitle: "Next.js 16 App Router Platform",
+    summary:
+      "High-performance production portfolio platform built with Next.js 16, Turbopack, Tailwind CSS v4, Framer Motion, and Bodoni Moda typography.",
+    stack: ["Next.js 16", "TypeScript", "Tailwind CSS v4", "Framer Motion", "Lenis"],
+    highlights: [
+      "Built on Next.js 16 App Router with Turbopack, static site generation, Lenis smooth scrolling, and keyboard-first command palette (⌘K).",
+      "Engineered with high-contrast Didone typography (Bodoni Moda), custom design token system, dark/light theme switching, and Resend contact delivery.",
+    ],
+    links: { demo: "https://portfolio-mohith-eight.vercel.app", github: "https://github.com/Mohith946/portfolio-mohith" },
+    caseStudy: {
+      overview:
+        "The flagship engineering portfolio platform engineered from scratch to highlight full-stack systems, AI agents, and computer vision projects.",
+      problem:
+        "Need for an elite, high-performance portfolio with bespoke interactive previews, static generation, SEO optimization, and keyboard-first command palette navigation.",
+      approach:
+        "Leveraged Next.js 16 App Router, Tailwind CSS v4 design tokens, Framer Motion springs, and accessible semantic UI components.",
+      challenges:
+        "Fine-tuning fluid typography, custom OpenType font styling, and zero-layout-shift responsive card grids.",
+      learnings:
+        "Deep dive into Next.js 16 compiler features, Tailwind v4 theme engines, and accessible keyboard navigation.",
     },
   },
 ];

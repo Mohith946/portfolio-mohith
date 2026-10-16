@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Activity, Bot, Cpu, Database, Eye, Lock, QrCode, Sparkles, Wifi } from "lucide-react";
+import { Activity, Bot, Code2, Cpu, Database, Eye, Globe, Layers, Layout, Lock, QrCode, Sparkles, Wifi } from "lucide-react";
 import type { Project } from "@/data/portfolio";
 import { cn } from "@/lib/site";
 
@@ -202,6 +202,101 @@ export function ProjectPreview({
             <span>MERN Stack Architecture</span>
             <span className="text-accent">REST Endpoints Active</span>
           </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (project.slug === "liquid-glass-portfolio") {
+    return (
+      <div
+        className={cn(
+          "relative flex aspect-[16/10] flex-col justify-between overflow-hidden rounded-xl border border-border-strong/70 bg-[#080b12] p-4 font-mono text-xs select-none sm:p-5",
+          className,
+        )}
+      >
+        {/* Header */}
+        <div className="flex items-center justify-between border-b border-white/10 pb-2.5">
+          <div className="flex items-center gap-2">
+            <Globe size={12} className="text-accent" />
+            <span className="font-semibold text-fg text-[11px]">MOHITHLA.VERCEL.APP</span>
+          </div>
+          <span className="rounded-full bg-accent-soft px-2 py-0.5 text-[10px] text-accent">
+            React 19 · Vite
+          </span>
+        </div>
+
+        {/* Liquid Glass Preview Window */}
+        <div className="relative my-2 flex-1 rounded-xl border border-white/10 bg-white/[0.03] p-3 shadow-lg backdrop-blur-xl">
+          <div className="flex items-center justify-between text-[10px] text-muted">
+            <span className="flex items-center gap-1.5 text-accent">
+              <Layers size={11} /> Glassmorphic UI
+            </span>
+            <span>Vite HMR</span>
+          </div>
+
+          <div className="mt-2.5 space-y-2">
+            <div className="rounded-lg border border-white/10 bg-white/[0.05] p-2 backdrop-blur-md">
+              <p className="text-[11px] font-medium text-fg">Fluid Mesh Gradients</p>
+              <p className="mt-0.5 text-[9px] text-accent">GPU Accelerated · 60 FPS</p>
+            </div>
+            <div className="flex items-center justify-between rounded-lg border border-white/5 bg-black/30 px-2 py-1 text-[10px] text-muted">
+              <span>Tailwind v4 PostCSS</span>
+              <span className="text-accent">Live Production</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer Ticker */}
+        <div className="flex items-center justify-between border-t border-white/5 pt-2 text-[10px] text-muted">
+          <span>Client SPA Architecture</span>
+          <span className="text-accent">Vercel Edge Deployed</span>
+        </div>
+      </div>
+    );
+  }
+
+  if (project.slug === "modernist-developer-portfolio") {
+    return (
+      <div
+        className={cn(
+          "relative flex aspect-[16/10] flex-col justify-between overflow-hidden rounded-xl border border-border-strong/70 bg-[#070912] p-4 font-mono text-xs select-none sm:p-5",
+          className,
+        )}
+      >
+        {/* Header */}
+        <div className="flex items-center justify-between border-b border-white/10 pb-2.5">
+          <div className="flex items-center gap-2">
+            <Layout size={12} className="text-accent" />
+            <span className="font-semibold text-fg text-[11px]">PORTFOLIO-MOHITH (v2)</span>
+          </div>
+          <span className="flex items-center gap-1 rounded-full bg-accent-soft px-2 py-0.5 text-[10px] text-accent">
+            <Sparkles size={10} /> Next.js 16 · Turbopack
+          </span>
+        </div>
+
+        {/* Architecture Grid */}
+        <div className="my-2 grid grid-cols-2 gap-2 text-[10px]">
+          <div className="rounded-lg border border-white/5 bg-white/[0.02] p-2.5">
+            <span className="text-muted flex items-center gap-1">
+              <Code2 size={11} className="text-accent" /> Typeface
+            </span>
+            <p className="mt-1 font-serif text-[13px] text-fg">Bodoni Moda</p>
+            <span className="text-[9px] text-accent">Didone Contrast</span>
+          </div>
+          <div className="rounded-lg border border-white/5 bg-white/[0.02] p-2.5">
+            <span className="text-muted flex items-center gap-1">
+              <Activity size={11} className="text-accent" /> Smooth Engine
+            </span>
+            <p className="mt-1 font-mono text-[11px] text-fg">Lenis + Framer</p>
+            <span className="text-[9px] text-accent">Spring Physics</span>
+          </div>
+        </div>
+
+        {/* Footer Ticker */}
+        <div className="flex items-center justify-between border-t border-white/5 pt-2 text-[10px] text-muted">
+          <span>ISR 24h · ⌘K Palette</span>
+          <span className="text-accent">App Router Full-Stack</span>
         </div>
       </div>
     );
