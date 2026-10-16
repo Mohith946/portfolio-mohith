@@ -39,9 +39,9 @@ export function Navbar({ hasAvatar }: { hasAvatar: boolean }) {
     <header className="fixed inset-x-0 top-4 z-50 flex justify-center px-4">
       <nav
         aria-label="Main"
-        className="relative w-full max-w-3xl rounded-full border border-border-strong bg-bg/70 p-1.5 shadow-lg shadow-black/10 backdrop-blur-xl md:w-auto"
+        className="relative w-full max-w-lg rounded-full border border-border-strong bg-bg/70 p-1.5 shadow-lg shadow-black/10 backdrop-blur-xl md:w-auto md:max-w-none"
       >
-        <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center justify-between gap-2 md:gap-3">
           <a
             href={sectionHref("top")}
             onClick={go("top")}
@@ -51,7 +51,7 @@ export function Navbar({ hasAvatar }: { hasAvatar: boolean }) {
             <span className="font-serif text-lg font-medium tracking-tight">{profile.shortName}</span>
           </a>
 
-          <ul className="hidden items-center md:flex">
+          <ul className="hidden items-center gap-0.5 md:flex">
             {navLinks.map((link) => (
               <li key={link.id} className="relative">
                 <a
@@ -59,7 +59,7 @@ export function Navbar({ hasAvatar }: { hasAvatar: boolean }) {
                   onClick={go(link.id)}
                   aria-current={active === link.id ? "true" : undefined}
                   className={cn(
-                    "relative z-10 block rounded-full px-3.5 py-2 text-sm transition-colors",
+                    "relative z-10 block rounded-full px-3 py-1.5 text-[13px] font-medium transition-colors lg:px-3.5 lg:py-2 lg:text-sm",
                     active === link.id ? "text-fg" : "text-muted hover:text-fg",
                   )}
                 >
@@ -86,8 +86,8 @@ export function Navbar({ hasAvatar }: { hasAvatar: boolean }) {
               <Command size={15} />
             </button>
             <ThemeToggle />
-            <ButtonLink href={profile.resume} className="ml-1 px-4 py-2">
-              Resume <ArrowUpRight size={15} />
+            <ButtonLink href={profile.resume} className="ml-1 px-3.5 py-1.5 text-xs lg:px-4 lg:py-2 lg:text-sm">
+              Resume <ArrowUpRight size={14} />
             </ButtonLink>
           </div>
 

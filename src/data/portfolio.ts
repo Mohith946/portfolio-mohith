@@ -116,7 +116,6 @@ export const hero = {
     "LangGraph",
     "OR-Tools",
     "FastAPI",
-    "Python",
     "Node.js",
     "YOLOv8",
     "OpenCV",
