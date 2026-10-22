@@ -83,9 +83,9 @@ export function Hero() {
               <ButtonLink href={profile.github} variant="icon" aria-label="GitHub">
                 <GithubIcon />
               </ButtonLink>
-              <ButtonLink href={`mailto:${profile.email}`} variant="icon" aria-label="Email">
+              <Button onClick={() => scrollTo("contact")} variant="icon" aria-label="Contact">
                 <Mail size={18} />
-              </ButtonLink>
+              </Button>
             </div>
           </motion.div>
         </div>
