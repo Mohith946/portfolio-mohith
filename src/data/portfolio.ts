@@ -144,11 +144,11 @@ export const experience: Experience[] = [
       "Worked on production-style workflows: REST API design, database integration, and responsive UI implementation.",
     ],
   },
-  {
+  /*{
     role: "Core Member",
     org: "Finite Loop Club (FLC), NMAMIT",
     points: ["Contributing to coding events, technical workshops, and problem-solving activities."],
-  },
+  }*/
 ];
 
 export const education: Education[] = [
